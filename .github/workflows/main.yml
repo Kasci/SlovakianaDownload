@@ -1,6 +1,7 @@
 jobs:
   pyinstaller-build:
     runs-on: windows-latest
+    on: push
     steps:
       - name: Create Executable
         uses: sayyid5416/pyinstaller@v1
