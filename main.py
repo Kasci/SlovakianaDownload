@@ -10,7 +10,7 @@ with open("./input.txt") as file:
     for line in lines:
         url = line.strip()
         
-        m = re.search("(kulturne-objekty|cultural-objects)/([a-z0-9\-]+)\??", url)
+        m = re.search("(kulturne-objekty|cultural-objects|scitacie-harky|census-forms)/([a-z0-9\-]+)\??", url)
         if m == None:
             print("URL neobsahuje ID.")
             continue
